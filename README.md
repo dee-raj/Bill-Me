@@ -37,6 +37,7 @@
 3. Login Screen ![Login Screen](assets/screenshots/Screenshot_3.png)
 4. Home Screen ![Home Screen](assets/screenshots/Screenshot_5.png)
 5. Profile Screen ![Profile Screen](assets/screenshots/Screenshot_9.png)
+6. Business Pan Validation ![Profile Screen](assets/screenshots/Screenshot_12.png)
 
 
 ## Technologies Used
@@ -88,6 +89,47 @@ npx expo start
 
 This will open an Expo DevTools page in your browser, where you can run the project on an emulator or a real device.
 
+## Project Structure
+assets/   
+├── pan/                # pan images
+├── screenshots/        # devloping process 
+components/             # Reusable UI components
+│   ├── AuthForm.jsx
+│   └── ErrorModel.jsx
+│   └── ForgotModel.jsx
+│   └── IconItem.jsx
+│   └── PanValidationForm.jsx
+
+navigationStacks/
+│   ├── AppStack.js
+│   ├── AuthStack.js
+│   ├── BusinessStack.js
+│   ├── HomeStack.js
+│   ├── MainTabNavigator.js
+│   ├── ProfileStack.js
+
+screens/
+│   ├── business/
+      ....
+│   ├── Dashboard.jsx 
+│   ├── HomeScreen.jsx 
+│   ├── Login.jsx 
+│   ├── ProfileScreen.jsx 
+│   ├── Purchases.jsx 
+│   ├── Register.jsx 
+│   ├── SellerProfile.jsx 
+│   ├── SettingsScreen.jsx 
+│   ├── WelcomeScreen.jsx 
+│   ├── WorkFieldTasksScreen.jsx
+
+├── .env                # Environment variables
+├── .gitignore          # Files and directories to ignore in Git
+├── app.json            # App configuration
+├── firebaseConfig.json # Firebase configuration
+├── eas.json            # Expo Application Services config
+├── package.json        # Project metadata and dependencies
+├── babel.config.json   # Babel configuration
+└── Readme.md           # Project documentation
 
 ## License
 

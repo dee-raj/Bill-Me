@@ -31,10 +31,10 @@ export default function App() {
     return (
       <View style={styles.container}>
         <ActivityIndicator size="large" color="#0000ff" />
-        <Text>Loading...</Text>
+        <Text>We are Loading your screen; Please wait ...</Text>
       </View>
     );
-  }
+  };
 
   return (
     <NavigationContainer>
